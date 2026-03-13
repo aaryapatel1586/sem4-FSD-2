@@ -1,0 +1,20 @@
+<!-- fetch name and concat and also sort in decending order -->
+<script>
+    var a={
+        "division1":{
+            "name":['x','p','a','y','n'],
+            "age":[10,20,11,10,12]
+        },
+        "division2":{
+            "name":['t','b','f','v','m'],
+            "age":[11,12,10,11,12]
+        }
+    }
+    var d1=a.division1.age;
+    var d2=a.division2.age;
+    var ans=d1.concat(d2).sort((a,b)=>b-a);
+    console.log(ans);
+    for(i of ans){
+        document.write(`<h2> student ${i} </h2>`);
+    }
+</script>

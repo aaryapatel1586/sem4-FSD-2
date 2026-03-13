@@ -1,0 +1,14 @@
+<!-- sort array in decending order and also return lowest value of age -->
+ <script>
+    const emp=[
+        {"name":"pqr","age":20},
+        {"name":"xyz","age":15},
+        {"name":"mno","age":18}
+    ]
+    var d1=emp.sort((x,y)=>y.age-x.age)
+    for(e1 of emp){
+        console.log(e1.name+" "+e1.age);
+    }
+    document.writeln(emp[emp.length-1].age+"<br>")
+    document.write(Math.max(...emp.map(emp=>emp.age)))
+ </script>

@@ -1,0 +1,19 @@
+<!-- Concept of Update value-->
+ <script>
+    function dom(){
+           var obj='{"name":"Dhriti","age":10,"dob":"2010-02-24"}';
+           var data=JSON.parse(obj);
+           data.age=5;
+           data["name"]="Dhyani";
+           var n="name";
+           data[n]="Dhyey";
+           document.getElementById("t1").innerHTML=`Name is ${data.name} <br> Age is ${data.age}`;
+           document.getElementById('t2').innerHTML=new Date(data.dob);
+    }          
+ </script>
+ <body>
+  <button onclick="dom()">Click here</button>
+  <h2 id="t1"></h2>
+  <h2 id="t2"></h2>
+  </body>
+ 

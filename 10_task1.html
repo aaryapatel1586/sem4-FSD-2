@@ -1,0 +1,21 @@
+<!-- fetch name and concat and also sort them -->
+<script>
+    var a={
+        "division1":{
+            "name":['x','p','a','y','n'],
+            "age":[10,20,11,10,12]
+        },
+        "division2":{
+            "name":['t','b','f','v','m'],
+            "age":[11,12,10,11,12]
+        }
+    }
+    var d1=a.division1.name;
+    var d2=a.division2.name;
+    var ans=d1.concat(d2).sort();
+    console.log(ans);
+    for(i of ans){
+        document.write(`<h2> student ${i} </h2>`);
+    }
+    // console.log(a.division1.name.concat(a.division2.name))
+</script>

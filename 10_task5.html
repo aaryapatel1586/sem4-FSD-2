@@ -1,0 +1,10 @@
+<script>
+    var a=["xyz",'pqr','mno','jkn','dfg']
+    function firstlast(p){
+        var o={};
+        o[p[0]]=p[p.length-1];
+        return o;
+    }
+    var d=firstlast(a)
+    document.write(JSON.stringify(d))
+</script>
