@@ -1,0 +1,21 @@
+<p id="test" style="font-size:50px">LJU</p>
+<button onclick="inc()">Increase</button>
+<button onclick="dec()">Decrease</button>
+<button onclick="stop()">Stop</button>
+<script>
+    var f=50;
+    setInterval(inc,2000);
+    setInterval(dec,2000);
+    setInterval(stop,2000);
+    function temp(f){
+        document.getElementById("test").style.fontSize=f+"px";
+    }
+    function inc(){
+        i=setInterval(() =>{if(f<150){temp(++f)}},100)
+    }
+    function dec(){
+        i=setInterval(()=>{if(f<100){temp(--f)}},100)}
+    function stop(){
+        clearInterval(i);
+    }
+</script>
